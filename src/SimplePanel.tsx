@@ -4,6 +4,7 @@ import { css, cx } from 'emotion';
 import 'fonts.scss';
 import React from 'react';
 import { SimpleOptions } from 'types';
+import logo from './img/logo.svg';
 
 interface Props extends PanelProps<SimpleOptions> {}
 
@@ -44,6 +45,9 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) =
           </div>
         )}
         <div>Text option value: {options.text}</div>
+      </div>
+      <div>
+        <img src={logo} width={38} />
       </div>
     </div>
   );
